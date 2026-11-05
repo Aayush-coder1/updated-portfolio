@@ -1,0 +1,527 @@
+{
+  "profile": {
+    "name": "Aayush Ajay Wanve",
+    "shortName": "Aayush",
+    "role": "Tech guy · CS student",
+    "tagline": "Exploring & sharing my journey in Tech & AI 😎\nBuilding innovative projects, sharing insights, and learning along the way. 🚀",
+    "bio": "Computer Engineering student at VESIT, Mumbai. I love building practical tools powered by AI — I spend my time exploring new tech stacks, learning by doing, and building ideas into reality.",
+    "location": "Mumbai, India",
+    "education": {
+      "school": "VESIT, Mumbai",
+      "degree": "B.Tech Computer Engineering",
+      "graduation": "'28"
+    },
+    "email": "",
+    "resumeUrl": "https://docs.google.com/document/d/1GMYt7Xf4SN37lD0sC9SxFqURZoD1vJP60JXnFRWysBU/edit?tab=t.0",
+    "openToWork": true
+  },
+  "socials": [
+    {
+      "id": "github",
+      "platform": "github",
+      "label": "GitHub",
+      "handle": "Aayush-coder1",
+      "url": "https://github.com/Aayush-coder1"
+    },
+    {
+      "id": "linkedin",
+      "platform": "linkedin",
+      "label": "LinkedIn",
+      "handle": "aayush-wanve",
+      "url": "https://www.linkedin.com/in/aayush-wanve-4162b9386/"
+    },
+    {
+      "id": "x",
+      "platform": "x",
+      "label": "X",
+      "handle": "@aayucooldev",
+      "url": "https://x.com/aayucooldev"
+    },
+    {
+      "id": "leetcode",
+      "platform": "leetcode",
+      "label": "LeetCode",
+      "handle": "aayush_isop",
+      "url": "https://leetcode.com/u/aayush_isop/"
+    },
+    {
+      "id": "codolio",
+      "platform": "codolio",
+      "label": "Codolio",
+      "handle": "aayuisop",
+      "url": "https://codolio.com/profile/aayuisop"
+    }
+  ],
+  "projects": [
+    {
+      "id": "ai-bots",
+      "title": "ai-bots",
+      "summary": "AI agents with their own sandboxed computers: terminal, files, the open web and a live desktop you can watch and take over. Bots @mention and hand work to each other in group chats.",
+      "tags": [
+        "Next.js 16",
+        "Trigger.dev",
+        "Gemini",
+        "E2B",
+        "Daytona",
+        "Clerk"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/ai-bots",
+      "liveUrl": "https://ai-bots-six.vercel.app/",
+      "featured": true,
+      "image": "",
+      "event": "Self project",
+      "repoPrivate": true
+    },
+    {
+      "id": "legalvault",
+      "title": "LegalVault",
+      "summary": "A secure vault for lawyers' cases, notes and files. A Next.js frontend talks to auth, case and file services through a gateway, and only AES-256-GCM-encrypted data reaches MongoDB and Backblaze B2.",
+      "tags": [
+        "Next.js",
+        "Express",
+        "Microservices",
+        "AES-256-GCM",
+        "MongoDB",
+        "JWT"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/legalvault",
+      "liveUrl": "",
+      "featured": true,
+      "image": "/projects/legalvault.jpg",
+      "event": "Team project",
+      "repoPrivate": false
+    },
+    {
+      "id": "codescope-ai",
+      "title": "CodeScope AI",
+      "summary": "An AI codebase intelligence dashboard for deep PR risk and code analysis: paste code, a diff or a GitHub repo / PR URL to get diff security scanning, dependency risk maps and AI summaries. Built on AMD cloud GPU infrastructure with Fireworks AI APIs.",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Fireworks AI",
+        "AMD GPUs",
+        "React Flow"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/codescope-ai",
+      "liveUrl": "https://codescope-ai-hack.vercel.app/",
+      "featured": true,
+      "image": "/projects/codescope-ai.jpg",
+      "event": "AMD AI Developer Hackathon",
+      "repoPrivate": false
+    },
+    {
+      "id": "saas-feature-factory",
+      "title": "SaaS Feature Factory",
+      "summary": "Five AI agents (spec, code gen, QA, deploy, docs) collaborate through Band to turn one text prompt into tested, documented code, with an audit trail end to end.",
+      "tags": [
+        "Multi-agent",
+        "Band",
+        "Python",
+        "Vitest"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/saas-feature-factory",
+      "liveUrl": "https://saas-feature-factory.vercel.app/",
+      "featured": true,
+      "image": "/projects/saas-feature-factory.jpg",
+      "event": "Band of Agents Hackathon",
+      "repoPrivate": false
+    },
+    {
+      "id": "commitwise-ai",
+      "title": "CommitWise AI",
+      "summary": "A Git safety workflow that scans staged changes before you commit: leaked secrets, files like node_modules or .env, and leftover debug statements, each with a severity and a one-click fix.",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Git",
+        "Security"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/commitwise-ai",
+      "liveUrl": "https://commitwise-ai.vercel.app/",
+      "featured": true,
+      "image": "/projects/commitwise-ai.jpg",
+      "event": "UniMerge 1.0",
+      "repoPrivate": false
+    },
+    {
+      "id": "visualpath-ai",
+      "title": "VisualPath AI",
+      "summary": "A visual editing layer for React + Tailwind apps: click any element on the running site, describe the change, and a local agent edits the exact source line through the AST.",
+      "tags": [
+        "TypeScript",
+        "Vite plugin",
+        "Gemini",
+        "AST"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/visualpath-ai",
+      "liveUrl": "",
+      "featured": true,
+      "image": "",
+      "event": "FlowZint AI Hackathon",
+      "repoPrivate": false
+    },
+    {
+      "id": "resource-ai",
+      "title": "Resource AI",
+      "summary": "A real-time NGO resource allocation platform with map-based volunteer matching and automated urgency routing.",
+      "tags": [
+        "TypeScript",
+        "Maps",
+        "Real-time"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/resource-ai",
+      "liveUrl": "https://resource-ai-xi.vercel.app/",
+      "featured": true,
+      "image": "/projects/resource-ai.jpg",
+      "event": "Google Solution Challenge",
+      "repoPrivate": false
+    },
+    {
+      "id": "cinedna",
+      "title": "CineDNA",
+      "summary": "A cinematic identity platform: build a Cinema DNA profile from your movie taste, compare compatibility with friends, and level up with XP, streaks and badges.",
+      "tags": [
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "TMDB API"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/cinedna",
+      "liveUrl": "https://cinedna.onrender.com/",
+      "featured": true,
+      "image": "/projects/cinedna.jpg",
+      "event": "HACKHAZARDS '26",
+      "repoPrivate": false
+    },
+    {
+      "id": "talentlens",
+      "title": "TalentLens",
+      "summary": "An employee turnover prediction app. Decision Tree and Random Forest models trained on a modern HR dataset (hybrid work, burnout, AI-tool usage), served through a Streamlit studio UI.",
+      "tags": [
+        "Python",
+        "Scikit-Learn",
+        "Streamlit",
+        "ML"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/mini-project-ML-lab",
+      "liveUrl": "https://talentlens-2026.streamlit.app/",
+      "featured": true,
+      "image": "",
+      "event": "ML mini-project",
+      "repoPrivate": false
+    },
+    {
+      "id": "gemma-live-artist",
+      "title": "Gemma Live Artist",
+      "summary": "An accessible AI makeup mentor: Gemma 4 reads a live webcam feed and gives beginner-friendly, step-by-step guidance.",
+      "tags": [
+        "Gemma 4",
+        "Python",
+        "Streamlit",
+        "OpenCV"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/Gemma-Live-Artist",
+      "liveUrl": "",
+      "featured": true,
+      "image": "",
+      "event": "Gemma 4 Hackathon",
+      "repoPrivate": false
+    },
+    {
+      "id": "buildabilityai",
+      "title": "Buildability AI",
+      "summary": "AI project scoping: a 0–100 feasibility score, infrastructure cost modelling and codebase audits.",
+      "tags": [
+        "TypeScript",
+        "AI"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/buildabilityai",
+      "liveUrl": "https://bfrfjgq9o5g30j8hj273dvy6o.nativelyai.app/",
+      "featured": false,
+      "image": "/projects/buildabilityai.jpg",
+      "event": "",
+      "repoPrivate": false
+    },
+    {
+      "id": "movie-explorer",
+      "title": "Movie Explorer",
+      "summary": "Search and browse films with details pulled from a movie database API.",
+      "tags": [
+        "React",
+        "REST API"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/movie-explorer",
+      "liveUrl": "https://movie-explorer-phi-ivory.vercel.app/",
+      "featured": false,
+      "image": "",
+      "event": "",
+      "repoPrivate": false
+    },
+    {
+      "id": "krishna-parallax",
+      "title": "Krishna Parallax",
+      "summary": "A React parallax-scrolling site with animations and music.",
+      "tags": [
+        "React",
+        "Animation"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/krishna-parallax",
+      "liveUrl": "",
+      "featured": false,
+      "image": "",
+      "event": "",
+      "repoPrivate": false
+    },
+    {
+      "id": "autoflow",
+      "title": "Autoflow",
+      "summary": "A proof-of-concept no-code automation app for small businesses, built for a pitch.",
+      "tags": [
+        "Automation",
+        "HTML"
+      ],
+      "repoUrl": "https://github.com/Aayush-coder1/Autoflow",
+      "liveUrl": "",
+      "featured": false,
+      "image": "",
+      "event": "",
+      "repoPrivate": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "languages",
+      "name": "Languages & core",
+      "items": [
+        "Java",
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "DSA",
+        "OOP"
+      ]
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "items": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Vite"
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "items": [
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "Microservices",
+        "JWT auth"
+      ]
+    },
+    {
+      "id": "data",
+      "name": "Databases",
+      "items": [
+        "MongoDB",
+        "PostgreSQL",
+        "Drizzle ORM"
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps & cloud",
+      "items": [
+        "Docker",
+        "Git",
+        "GitHub",
+        "Vercel",
+        "Render"
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "AI & automation",
+      "items": [
+        "Generative AI",
+        "Prompt Engineering",
+        "AI agents",
+        "Vercel AI SDK",
+        "Gemini API",
+        "Scikit-Learn",
+        "Streamlit",
+        "Intelligent Automation"
+      ]
+    }
+  ],
+  "hackathons": [
+    {
+      "id": "hackhazards-26",
+      "name": "HACKHAZARDS '26",
+      "note": "Project Developer. Built CineDNA.",
+      "year": "May – Jul 2026",
+      "url": "https://github.com/Aayush-coder1/cinedna",
+      "organizer": "NAMESPACE · Online"
+    },
+    {
+      "id": "unimerge-1",
+      "name": "UniMerge 1.0",
+      "note": "Solo build: CommitWise AI.",
+      "year": "Apr 2026",
+      "url": "https://github.com/Aayush-coder1/commitwise-ai",
+      "organizer": "parth.builds · Solo, online"
+    },
+    {
+      "id": "syrus-2026",
+      "name": "Syrus Hackathon 2026",
+      "note": "Industry-sponsored hackathon.",
+      "year": "Mar 2026",
+      "url": "https://github.com/Aayush-coder1/syrus_hack_2026",
+      "organizer": "CodeCell++, VESIT"
+    },
+    {
+      "id": "amd-ai-dev-act-2",
+      "name": "AMD AI Developer Hackathon (Act II)",
+      "organizer": "AMD",
+      "note": "Project Developer. Built CodeScope AI using AMD cloud GPU infrastructure and Fireworks AI APIs.",
+      "year": "2026",
+      "url": "https://github.com/Aayush-coder1/codescope-ai"
+    },
+    {
+      "id": "gemma-4",
+      "name": "Gemma 4 Hackathon",
+      "note": "Built Gemma Live Artist.",
+      "year": "2026",
+      "url": "https://github.com/Aayush-coder1/Gemma-Live-Artist",
+      "organizer": ""
+    },
+    {
+      "id": "band-of-agents",
+      "name": "Band of Agents Hackathon",
+      "note": "Built SaaS Feature Factory.",
+      "year": "2026",
+      "url": "https://github.com/Aayush-coder1/saas-feature-factory",
+      "organizer": "lablab.ai"
+    },
+    {
+      "id": "flowzint-2026",
+      "name": "FlowZint AI Hackathon 2026",
+      "note": "Built VisualPath AI.",
+      "year": "2026",
+      "url": "https://github.com/Aayush-coder1/visualpath-ai",
+      "organizer": "Open Innovation track"
+    },
+    {
+      "id": "google-solution-challenge",
+      "name": "Google Solution Challenge",
+      "note": "Built Resource AI.",
+      "year": "2026",
+      "url": "https://github.com/Aayush-coder1/resource-ai",
+      "organizer": ""
+    },
+    {
+      "id": "chainverse",
+      "name": "CSI Workshop: ChainVerse",
+      "note": "",
+      "year": "Feb 2026",
+      "url": "",
+      "organizer": "CSI"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "hackhazards-26",
+      "title": "HACKHAZARDS '26: Certificate of Participation",
+      "issuer": "NAMESPACE",
+      "date": "July 2026",
+      "image": "/certificates/hackhazards-2026.jpg",
+      "url": "/certificates/hackhazards-2026.pdf"
+    },
+    {
+      "id": "unimerge-1",
+      "title": "UniMerge 1.0: Certificate of Participation",
+      "issuer": "parth.builds community",
+      "date": "April 2026",
+      "image": "/certificates/unimerge-1.jpg",
+      "url": "https://drive.google.com/file/d/1hBhqEFTXkuy7fpPFu5gyLMAuKaB3DHWT/view"
+    },
+    {
+      "id": "syrus-2026",
+      "title": "Syrus Hackathon 2026: Certificate of Participation",
+      "issuer": "CodeCell++, VESIT",
+      "date": "March 2026",
+      "image": "/certificates/syrus-2026.jpg",
+      "url": "https://drive.google.com/file/d/1AMHbAk0CD_cCYyzyQ0-FUIkCNoySF7na/view"
+    }
+  ],
+  "showcase": {
+    "enabled": true,
+    "projectId": "ai-bots",
+    "eyebrow": "Latest build",
+    "title": "ai-bots: AI agents with their own computers",
+    "summary": "Every bot has a personality, a long-term memory, a face and a real sandboxed machine: a terminal, a file system, the open web and a live desktop you can watch and take over. Put several bots in a group chat and they @mention and hand work off to each other. Built as a production-style SaaS with auth, a paid plan, metered usage and full observability, all on free tiers.",
+    "features": [
+      {
+        "id": "agentic-chat",
+        "title": "Agentic chat",
+        "body": "Streaming replies with every tool call rendered inline: terminal output, file trees, code and web sources."
+      },
+      {
+        "id": "live-desktop",
+        "title": "Live desktop + Watch Mode",
+        "body": "A noVNC panel opens by itself when the bot starts using its computer. Click the screen to take control."
+      },
+      {
+        "id": "sandboxes",
+        "title": "Real sandboxes",
+        "body": "Daytona for the bot's persistent machine, E2B Desktop for the live screen, E2B Code Interpreter for internet-enabled code."
+      },
+      {
+        "id": "memory",
+        "title": "Per-bot memory",
+        "body": "remember / recall tools give each bot its own durable notes about you."
+      },
+      {
+        "id": "group-chats",
+        "title": "Group chats",
+        "body": "@mention a bot or let bots hand a turn off to the one that fits it best."
+      },
+      {
+        "id": "billing",
+        "title": "Billing and usage",
+        "body": "Clerk Billing plans gate features; an append-only ledger meters tokens, sandbox seconds, searches and fetches."
+      }
+    ],
+    "stack": [
+      "Next.js 16",
+      "React 19",
+      "Clerk",
+      "Neon Postgres",
+      "Drizzle",
+      "Vercel AI SDK",
+      "Gemini",
+      "Trigger.dev",
+      "E2B",
+      "Daytona",
+      "Sentry",
+      "Tailwind v4"
+    ]
+  },
+  "widgets": {
+    "githubUsername": "Aayush-coder1",
+    "leetcodeUsername": "aayush_isop",
+    "showGithub": true,
+    "showLeetcode": true,
+    "leetcodeFallback": {
+      "solved": 297,
+      "easy": 127,
+      "medium": 162,
+      "hard": 8
+    }
+  }
+}

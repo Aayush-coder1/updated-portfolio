@@ -1,0 +1,238 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #06080d;      /* page background, deep obsidian with a blue cast */
+  --color-slate: #0d121c;     /* raised surfaces */
+  --color-slate-2: #141b29;   /* inputs, hover surfaces */
+  --color-line: #1f2a3d;      /* hairlines */
+  --color-ink: #e8ecf4;       /* primary text */
+  --color-mute: #8b96ab;      /* secondary text */
+  --color-plasma: #9b87ff;    /* violet neon */
+  --color-ion: #3be8c4;       /* teal neon, reserved for live data + success */
+  --color-ember: #ff8a65;     /* LeetCode medium + warnings */
+  --color-danger: #ff5f7a;
+
+  --font-sans: "Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace;
+
+  --ease-snap: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-void);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-optical-sizing: auto;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--color-plasma) 45%, transparent);
+    color: white;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ion);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  /* Custom scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2a3650 transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--color-plasma), #2a3650 40%);
+    border: 3px solid var(--color-void);
+    border-radius: 999px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Glass panel with a 1px gradient "neon" border, drawn with a masked pseudo-element. */
+  .glass {
+    position: relative;
+    background: color-mix(in oklab, var(--color-slate) 72%, transparent);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border-radius: 18px;
+  }
+  .glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(
+      140deg,
+      color-mix(in oklab, var(--color-plasma) 70%, transparent),
+      var(--color-line) 35%,
+      var(--color-line) 65%,
+      color-mix(in oklab, var(--color-ion) 55%, transparent)
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* Pointer-follow spotlight. JS sets --mx/--my on pointermove. */
+  .spotlight {
+    position: relative;
+    isolation: isolate;
+  }
+  .spotlight::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s var(--ease-snap);
+    background: radial-gradient(
+      420px circle at var(--mx, 50%) var(--my, 50%),
+      color-mix(in oklab, var(--color-plasma) 16%, transparent),
+      transparent 60%
+    );
+  }
+  .spotlight:hover::after {
+    opacity: 1;
+  }
+
+  .field {
+    width: 100%;
+    background: var(--color-slate-2);
+    border: 1px solid var(--color-line);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    color: var(--color-ink);
+    font-size: 0.95rem;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .field::placeholder {
+    color: #59647a;
+  }
+  .field:focus {
+    outline: none;
+    border-color: var(--color-plasma);
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-plasma) 22%, transparent);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    padding: 0 1.1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 0.15s var(--ease-snap), background 0.15s, box-shadow 0.2s, border-color 0.15s;
+    white-space: nowrap;
+  }
+  .btn:active {
+    transform: scale(0.97);
+  }
+  .btn-primary {
+    background: var(--color-ink);
+    color: var(--color-void);
+    box-shadow: 0 0 0 1px var(--color-ink), 0 8px 30px -8px color-mix(in oklab, var(--color-plasma) 70%, transparent);
+  }
+  .btn-primary:hover {
+    background: white;
+    box-shadow: 0 0 0 1px white, 0 10px 40px -6px var(--color-plasma);
+  }
+  .btn-ghost {
+    border: 1px solid var(--color-line);
+    color: var(--color-ink);
+    background: color-mix(in oklab, var(--color-slate) 60%, transparent);
+  }
+  .btn-ghost:hover {
+    border-color: color-mix(in oklab, var(--color-plasma) 60%, var(--color-line));
+    background: var(--color-slate-2);
+  }
+  .btn-danger {
+    border: 1px solid color-mix(in oklab, var(--color-danger) 40%, var(--color-line));
+    color: var(--color-danger);
+  }
+  .btn-danger:hover {
+    background: color-mix(in oklab, var(--color-danger) 12%, transparent);
+  }
+}
+
+/* Faint dot grid that fades out toward the bottom of the hero. */
+.grid-bg {
+  background-image: radial-gradient(color-mix(in oklab, var(--color-mute) 22%, transparent) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse 80% 70% at 30% 20%, #000 30%, transparent 75%);
+}
+
+@keyframes caret {
+  50% {
+    opacity: 0;
+  }
+}
+.caret {
+  animation: caret 1s steps(1) infinite;
+}
+
+/* Animated data flow between diagram nodes. --d staggers the pulse. */
+.flow-v {
+  position: relative;
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(var(--color-line), color-mix(in oklab, var(--color-plasma) 45%, var(--color-line)), var(--color-line));
+}
+.flow-v::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--color-ion);
+  box-shadow: 0 0 10px var(--color-ion);
+  animation: flow 1.8s var(--d, 0s) linear infinite;
+}
+@keyframes flow {
+  0% {
+    top: -4px;
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}

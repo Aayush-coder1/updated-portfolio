@@ -1,0 +1,19 @@
+# dependencies & build output
+node_modules
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+
+# secrets
+.env
+.env.local
+.env*.local
+
+# local-only notes, archives and scratch
+SETUP.md
+Claude outputs/
+.tmp-assets
+*.zip
+*.tgz
+.DS_Store
